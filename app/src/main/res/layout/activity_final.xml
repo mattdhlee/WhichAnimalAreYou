@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.matt.whichanimalareyou.UI.FinalActivity"
+    android:background="?android:attr/colorFocusedHighlight">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        app:srcCompat="@drawable/dolphin"
+        android:id="@+id/imageView"/>
+
+    <TextView
+        android:text="TextView"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/animalTextView"
+        android:layout_marginTop="250dp"
+        android:textSize="30sp"/>
+
+    <Button
+        android:text="Play Again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/replayButton"
+        app:layout_anchor="@+id/imageView"
+        app:layout_anchorGravity="top|left"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="450dp"
+        android:background="@android:color/background_light"/>
+
+</android.support.design.widget.CoordinatorLayout>
